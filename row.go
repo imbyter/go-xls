@@ -23,6 +23,9 @@ func (r *Row) Col(i int) string {
 	serial := uint16(i)
 	if ch, ok := r.cols[serial]; ok {
 		strs := ch.String(r.wb)
+		if len(strs) == 0 {
+			return ""
+		}
 		return strs[0]
 	} else {
 		for _, v := range r.cols {
