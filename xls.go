@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/extrame/ole2"
+	"github.com/imbyter/ole2"
 )
 
 //Open one xls file
